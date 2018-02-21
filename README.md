@@ -806,6 +806,13 @@ Validation FormSchema
 		}
 	}
 
+**Form Elements Types that trigger VisibleOn Options**
+1. BooleanInput
+2. Select Field
+3. CheckBox Field
+4. Radio Field
+Other elements cannot trigger the VisibleOn Options as their values are not set before hand in the FormSchema. 
+
 ### CopyValuesFrom Options
 
 Sometime we might run into billing address and shipping address that a user might have the same values in this field. We want to provide the nice UX for our user by adding a button to ask them either this has the same values as previous field.
@@ -1221,6 +1228,11 @@ Sometime there are some fileds that internal should not be able to update these 
 			"InternalCanUpdate": false
 		}
 	}
+	
+### Form Field Types that have multiple inputs
+1. Address
+2. FullName
+3. Fraction
 
 ## Version
 
